@@ -1,0 +1,21 @@
+@import "item";
+
+.section {
+  &__title {
+    font-size: 21px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
