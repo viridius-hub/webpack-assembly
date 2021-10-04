@@ -28,8 +28,8 @@ module.exports = {
             '@assets': path.join(dirs.src, "assets"),
             '@js': path.join(dirs.src, "assets", "js"),
             '@scss': path.join(dirs.src, "assets", "scss"),
-            '@images': path.join(dirs.src, "assets", "images"),
-            '@fonts': path.join(dirs.src, "assets", "fonts"),
+            '@images': path.join(dirs.src, "public", "images"),
+            '@fonts': path.join(dirs.src, "public", "fonts"),
         },
     },
     plugins: [

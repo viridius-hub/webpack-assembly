@@ -13,7 +13,7 @@
  * @return {Object} loader конфиг лоадера
  * @see https://www.npmjs.com/package/url-loader
  */
-function loader(prefix = "assets", limit = 100) {
+function loader(prefix = "public", limit = 8192) {
     return {
         loader: "url-loader",
         options: {

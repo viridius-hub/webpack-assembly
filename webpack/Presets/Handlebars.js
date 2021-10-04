@@ -1,5 +1,4 @@
 const path = require("path");
-const HtmlLoader = require("../Loaders/HtmlLoader");
 const HandlebarsLoader = require("../Loaders/HandlebarsLoader");
 
 module.exports = {
@@ -10,5 +9,8 @@ module.exports = {
             partialDirs: path.join(__dirname, "src", "assets", "templates", "components"),
             helpersDirs: path.join(__dirname, "src", "assets", "templates", "helpers")
         }),
+        // HtmlLoader({
+        //     interpolate: true
+        // }),
     ],
 }
