@@ -23,7 +23,7 @@
 
 ```shell
     yarn build
-    yarn start
+    yarn dev
 ```
 
 ## Проблемы
