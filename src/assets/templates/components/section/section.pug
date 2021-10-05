@@ -1,0 +1,13 @@
+mixin section(title)
+    section.section
+        h2.section__title #{title}
+        img.section__image(src=require('@images/image.jpg') alt="image")
+
+        p.section__paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, excepturi fugiat id ipsum magnam molestias nesciunt quam quos reiciendis vero. Assumenda delectus enim est expedita, inventore quisquam temporibus unde vitae.
+
+        include article
+        include ../mixins/loop
+        div.section__items
+            +loop(15)
+                +article("lorem isput")
+                    p Lorem ipsum dolor sit amet, consectetur.

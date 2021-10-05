@@ -13,7 +13,7 @@ module.exports = (dir = path.join("src", "assets", "templates", "pages")) => {
                 filename: `${name}.html`,
                 inject: 'head',
                 title: "Webpack",
-                template: `!!handlebars-loader!${dir}/${name}.${extension}`
+                template: `!!pug-loader!${dir}/${name}.${extension}`
             })
         })
 }

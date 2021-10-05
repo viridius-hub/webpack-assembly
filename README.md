@@ -7,7 +7,7 @@
 ## Поддерживает
 
 * SCSS/SASS
-* Handlebars templates
+* Pug templates
 * Javascript
 * Fonts loader
 * Images loader
@@ -25,7 +25,3 @@
     yarn build
     yarn dev
 ```
-
-## Проблемы
-* Не работаю динамические испорты через `.hbs` файлы, но есть решение, указывать корневой путь. Так для картинки будет
-`./public/images/image.jpg`, так же и для шрифтов и другиех статичных файлов подгружаемых через файлы `.hbs`, примеры есть в `src` папке

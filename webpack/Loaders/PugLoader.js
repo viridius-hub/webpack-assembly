@@ -1,5 +1,5 @@
 /**
- * handlebars-loader
+ * pug-loader
  *
  * @example
  *
@@ -8,7 +8,7 @@
  */
 function loader(options = {}) {
     return {
-        loader: 'handlebars-loader',
+        loader: 'pug-loader',
         options: options
     }
 }

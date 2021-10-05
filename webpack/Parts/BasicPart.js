@@ -1,9 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("../Plugins/HtmlWebpackPlugin");
 const MiniCssExtractPlugin = require("../Plugins/MiniCssExtractPlugin");
-const CopyWebpackPlugin = require("../Plugins/CopyWebpackPlugin");
 const CleanWebpackPlugin = require("../Plugins/CleanWebpackPlugin");
-const Handlebars = require("../Presets/Handlebars");
+const Pug = require("../Presets/Pug");
 const Scripts = require("../Presets/Scripts");
 const Style = require("../Presets/Style");
 const Fonts = require("../Presets/Fonts");
@@ -18,8 +17,9 @@ module.exports = {
     },
     output: {
         path: dirs.dist,
-        filename: '[name].bundle.js',
-        publicPath: "/"
+        filename: 'assets/js/[name].bundle.js',
+        publicPath: "/",
+        assetModuleFilename: '[path][name][ext]'
     },
     resolve: {
         alias: {
@@ -35,21 +35,13 @@ module.exports = {
     plugins: [
         ...HtmlWebpackPlugin(),
         MiniCssExtractPlugin({
-            filename: "style.css",
-        }),
-        CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.join(dirs.src, "public"),
-                    to: path.join(dirs.dist, "public")
-                }
-            ]
+            filename: "assets/css/style.css",
         }),
         CleanWebpackPlugin({}),
     ],
     module: {
         rules: [
-            Handlebars,
+            Pug,
             Scripts,
             Style,
             Fonts,

@@ -1,0 +1,6 @@
+$font-directory: "../../public/fonts/";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("#{$font-directory}/OpenSans-Regular.ttf") format("opentype");
+}
