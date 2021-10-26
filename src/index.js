@@ -1,2 +1,4 @@
 import "@scss/main.scss"
-import "@js/test"
+import "@js/spec"
+
+import "@js"

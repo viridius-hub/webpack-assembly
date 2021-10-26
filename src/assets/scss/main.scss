@@ -1,22 +1,11 @@
-@import "spec/variables";
-@import "spec/fonts";
-@import "components/section";
+/* VARIBLES, MIXINS, FUNCTIONS */
+@import "spec";
 
+/* LAYOUT STYLES */
+@import "layout";
 
-html, body {
-  padding: 0;
-  margin: 0;
-  color: $color-main;
-}
+/* COMPONENTS STYLES */
+@import "components";
 
-* {
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-.container {
-  width: 100%;
-  padding: 0 16px;
-  max-width: 1220px;
-  margin: 0 auto;
-}
+/* ROUTES STYLES */
+@import "routes";
