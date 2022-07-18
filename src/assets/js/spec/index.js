@@ -1,1 +1,1 @@
-import './svg-sprite'
+import './icons'

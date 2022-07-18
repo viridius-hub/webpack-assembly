@@ -41,9 +41,7 @@ module.exports = {
             filename: "assets/css/style.css",
         }),
         new CleanWebpackPlugin(),
-        new SpriteLoaderPlugin({
-            plainSprite: true
-        }),
+        new SpriteLoaderPlugin(),
         ...(new HtmlWebpackPlugin()),
         new HtmlWebpackPugPlugin(),
     ],

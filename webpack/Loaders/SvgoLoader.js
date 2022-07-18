@@ -6,5 +6,5 @@
  */
 
 module.exports = {
-    loader: 'svgo-loader'
+    loader: 'svgo-loader',
 }

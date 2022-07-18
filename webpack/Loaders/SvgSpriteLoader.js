@@ -6,5 +6,11 @@
  */
 
 module.exports = {
-    loader: 'svg-sprite-loader'
+    loader: 'svg-sprite-loader',
+    options: {
+        plainSprite: true,
+        extract: true,
+        publicPath: 'public/',
+        outputPath: 'public/'
+    }
 }

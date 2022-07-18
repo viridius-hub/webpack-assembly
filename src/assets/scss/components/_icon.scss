@@ -1,3 +1,8 @@
 .icon {
-    display: inline-block;
+  display: inline-block;
+
+  &--logo {
+    width: 264px;
+    height: 45px;
+  }
 }

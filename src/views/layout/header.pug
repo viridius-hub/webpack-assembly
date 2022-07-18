@@ -1,4 +1,3 @@
-include ../components/mixins/icon
 header.header
     .container
         .header__wrapper
@@ -7,10 +6,7 @@ header.header
                     +icon('logo')
             .header__block
                 nav.header__navs
-                    a(href="#") Deals
-                    a(href="#") Handys
-                    a(href="#").current Tarife
-                    a(href="#") DSL
-                    a(href="#") Vertragsverlängerung
+                    +loop(5)
+                        a(href="#") Link
                 .header__info
-                    a(href="#").btn.btn--primary Request a call
+                    a(href="#").btn.btn--primary Button
