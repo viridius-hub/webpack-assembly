@@ -10,6 +10,7 @@ const Style = require("../Presets/Style");
 const Fonts = require("../Presets/Fonts");
 const SvgSprite = require("../Presets/SvgSprite");
 const Images = require("../Presets/Images");
+const Videos = require("../Presets/Videos");
 const {dirs} = require('../Settings/Constants');
 
 module.exports = {
@@ -33,6 +34,7 @@ module.exports = {
             '@js': path.join(dirs.src, "assets", "js"),
             '@scss': path.join(dirs.src, "assets", "scss"),
             '@images': path.join(dirs.src, "public", "images"),
+            '@videos': path.join(dirs.src, "public", "videos"),
             '@icons': path.join(dirs.src, "public", "icons"),
         },
     },
@@ -53,6 +55,7 @@ module.exports = {
             Style,
             Fonts,
             Images,
+            Videos
         ],
     }
 }

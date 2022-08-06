@@ -13,23 +13,25 @@
 * Javascript (babel) - Компиляция и минификация js кода
 * Fonts loader - Загрузка своих шрифтов
 * Images loader - Загрзучик картинок
+* Video loader - Загрзучик видео
 
-* Включен в сборку SWIPER
+
+* В сборку включен SWIPER
 
 ## Для старта
 
 ```shell
     cd ./prfoject-folder
     git clone https://github.com/smiledie-hub/webpack-assembly .
-    yarn
+    npm i
 ```
 
 ## Комманды
 
 ```shell
-    yarn build
-    yarn build:dev
-    yarn dev
+    npm run build
+    npm run build:dev
+    npm run dev
 ```
 
 
@@ -55,6 +57,7 @@
       * `images` - Изображения (PNG, JPG, SVG и тп), SVG не будут собраны в sprite лист из этой папки
       * `fonts` - Просто статическая папка с шрифтами
       * `icons` - Собирает из этой папки все svg в sprite лист
+      * `videos` -  Видео (webm, mkv, mp4, mov, wmv, flv, avi)
     * `views` - HTML/PUG Шаблоны
       * `components` - Компоненты страниц (актуально для PUG)
         * `mixins` - Миксины
